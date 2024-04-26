@@ -1,0 +1,118 @@
+/* Estilos generales */
+
+@color-primary: #007bff; // Color primario azul
+@color-secondary: #333; // Color secundario gris oscuro
+
+body {
+    font-family: Arial, sans-serif; // Fuente para todo el cuerpo del sitio
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: @color-primary; // Fondo del encabezado
+    color: white; // Color del texto del encabezado
+    padding: 20px; // Espaciado interno
+}
+
+nav ul {
+    list-style-type: none; // Quitar viñetas de la lista
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; // Mostrar elementos en línea
+    margin-right: 20px; // Espaciado entre elementos
+}
+
+nav ul li a {
+    color: white; // Color de enlace en el menú
+    text-decoration: none; // Quitar subrayado
+}
+
+footer {
+    background-color: @color-primary; // Fondo del pie de página
+    color: white; // Color del texto del pie de página
+    padding: 10px; // Espaciado interno
+}
+
+
+/* Estilos específicos para cada página */
+
+/* Estilos para servicios.html */
+main h2 {
+    color: @color-primary; // Color del título
+}
+
+main p {
+    color: @color-secondary; // Color del texto
+}
+
+/* Estilos para precios.html */
+main h2 {
+    color: @color-primary; // Color del título
+}
+
+main p {
+    color: @color-secondary; // Color del texto
+}
+
+/* Estilos para nosotros.html */
+main h2 {
+    color: @color-primary; // Color del título
+}
+
+main p {
+    color: @color-secondary; // Color del texto
+}
+
+/* Estilos para contacto.html */
+main h2 {
+    color: @color-primary; // Color del título
+}
+
+main p {
+    color: @color-secondary; // Color del texto
+}
+
+
+
+
+// Definición de variables
+@contenedor-ancho: 80%; // Ancho del contenedor
+@imagen-ancho: 80%; // Ancho de cada imagen
+@espacio-entre-imagenes: 1%; // Espacio entre cada imagen
+
+// Estilo del contenedor
+.contenedor-imagenes {
+  width: @contenedor-ancho;
+  margin: 0 auto; // Para centrar horizontalmente
+}
+
+// Estilo de las imágenes
+.imagen {
+  width: @imagen-ancho;
+  display: inline-block;
+  margin-right: @espacio-entre-imagenes; // Espacio entre imágenes
+}
+
+// Elimina el margen derecho de la última imagen para evitar espacio adicional
+.imagen:last-child {
+  margin-right: 0;
+}
+
+
+.contenedor-imagenes {
+  display: flex; /* Utilizamos flexbox para organizar las imágenes */
+}
+
+.imagen {
+    flex: 1; /* Hace que las imágenes ocupen todo el espacio disponible */
+    margin: 0 70px; /* Añade un pequeño margen entre las imágenes */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  .imagen:hover {
+    transform: scale(1.1); /* Agranda la imagen al 110% cuando el mouse está sobre ella */
+  }
+  

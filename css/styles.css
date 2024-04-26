@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+}
+/* Estilos específicos para cada página */
+/* Estilos para servicios.html */
+main h2 {
+  color: #007bff;
+}
+main p {
+  color: #333;
+}
+/* Estilos para precios.html */
+main h2 {
+  color: #007bff;
+}
+main p {
+  color: #333;
+}
+/* Estilos para nosotros.html */
+main h2 {
+  color: #007bff;
+}
+main p {
+  color: #333;
+}
+/* Estilos para contacto.html */
+main h2 {
+  color: #007bff;
+}
+main p {
+  color: #333;
+}
+.contenedor-imagenes {
+  width: 80%;
+  margin: 0 auto;
+}
+.imagen {
+  width: 80%;
+  display: inline-block;
+  margin-right: 1%;
+}
+.imagen:last-child {
+  margin-right: 0;
+}
+.contenedor-imagenes {
+  display: flex;
+  /* Utilizamos flexbox para organizar las imágenes */
+}
+.imagen {
+  flex: 1;
+  /* Hace que las imágenes ocupen todo el espacio disponible */
+  margin: 0 70px;
+  /* Añade un pequeño margen entre las imágenes */
+  transition: transform 0.3s ease;
+  /* Agrega una transición suave */
+}
+.imagen:hover {
+  transform: scale(1.1);
+  /* Agranda la imagen al 110% cuando el mouse está sobre ella */
+}
